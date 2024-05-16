@@ -8,4 +8,9 @@ using SmallDatasetMaker
 
  TWGEMSDatasets.datasets() = SmallDatasetMaker.datasets(TWGEMSDatasets)
 
+
+
+include("stationlocation_shift.jl")
+export station_location_text_shift
+export textoffset
 end

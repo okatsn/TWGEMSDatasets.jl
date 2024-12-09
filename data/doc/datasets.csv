@@ -1,3 +1,2 @@
 PackageName,Dataset,Title,Rows,Columns,Description,TimeStamp,RawData,ZippedData
-Catalog,M4_main,Data [M4_main] of [Catalog],3977,15,,2024-05-16,data/raw/Catalog/M4_main.csv,data/Catalog/M4_main.gz
 StationInfo,location,Data [location] of [StationInfo],40,8,,2024-05-16,data/raw/StationInfo/location.csv,data/StationInfo/location.gz

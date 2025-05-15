@@ -2,7 +2,7 @@
 
 julia_version = "1.11.3"
 manifest_format = "2.0"
-project_hash = "b51cf3b06b968367236ebf679ee26367b73e47e4"
+project_hash = "8d8501dc66dc1113448ead31d1561d3857ac9b1e"
 
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
@@ -310,6 +310,14 @@ version = "0.4.1"
 deps = ["Dates"]
 uuid = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
 version = "1.0.3"
+
+[[deps.TWGEMSDatasets]]
+deps = ["SmallDatasetMaker"]
+git-tree-sha1 = "6f661b7d80f31f88e10ba495716a90749cd7516d"
+repo-rev = "main"
+repo-url = ".."
+uuid = "e02d82d9-7e7e-46f3-9a6c-b9afd88f5ac7"
+version = "0.2.2"
 
 [[deps.TableTraits]]
 deps = ["IteratorInterfaceExtensions"]

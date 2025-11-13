@@ -4,6 +4,6 @@
     station_location = TWGEMSDatasets.dataset("StationInfo", "location")
 
     for row in eachrow(station_location)
-        @test code2type(row.code) == row.type
+        @test TWGEMSDatasets.code2type(row.code) == row.type
     end
 end

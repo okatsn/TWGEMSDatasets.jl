@@ -1,6 +1,6 @@
 const typestr_GE = "GE"
 const typestr_GM = "GM"
-const set_GE = Set(
+const set_GE = Set([
     "KUOL",
     "HUAL",
     "TOCH",
@@ -22,9 +22,9 @@ const set_GE = Set(
     "WANL",
     "FENG",
     "HUZS",
-)
+])
 
-const set_GM = Set(
+const set_GM = Set([
     "MS",
     "TW",
     "TT",
@@ -44,50 +44,12 @@ const set_GM = Set(
     "XC",
     "SM",
     "CN",
-)
+])
 
 
 const dict_code2type = Dict(
-    "MS" => typestr_GM,
-    "TW" => typestr_GM,
-    "TT" => typestr_GM,
-    "YL" => typestr_GM,
-    "HC" => typestr_GM,
-    "HL" => typestr_GM,
-    "PT" => typestr_GM,
-    "YH" => typestr_GM,
-    "SL" => typestr_GM,
-    "LY" => typestr_GM,
-    "NC" => typestr_GM,
-    "KM" => typestr_GM,
-    "CS" => typestr_GM,
-    "MT" => typestr_GM,
-    "LN" => typestr_GM,
-    "ZB" => typestr_GM,
-    "XC" => typestr_GM,
-    "SM" => typestr_GM,
-    "CN" => typestr_GM,
-    "KUOL" => typestr_GE,
-    "HUAL" => typestr_GE,
-    "TOCH" => typestr_GE,
-    "ENAN" => typestr_GE,
-    "SIHU" => typestr_GE,
-    "HERM" => typestr_GE,
-    "CHCH" => typestr_GE,
-    "DAHU" => typestr_GE,
-    "KAOH" => typestr_GE,
-    "PULI" => typestr_GE,
-    "SHRL" => typestr_GE,
-    "SHCH" => typestr_GE,
-    "FENL" => typestr_GE,
-    "YULI" => typestr_GE,
-    "RUEY" => typestr_GE,
-    "LIOQ" => typestr_GE,
-    "LISH" => typestr_GE,
-    "DABA" => typestr_GE,
-    "WANL" => typestr_GE,
-    "FENG" => typestr_GE,
-    "HUZS" => typestr_GE,
+    (code => typestr_GM for code in set_GM)...,
+    (code => typestr_GE for code in set_GE)...
 )
 
 code2type(x) = dict_code2type[x]
